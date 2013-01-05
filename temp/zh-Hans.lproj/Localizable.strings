@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "名字尾页";
+"I am in need of help ASAP. I am currently at -"="我需要紧急帮助。我目前在 -\n";
+"First" = "名字";
+"Last" = "姓";
+"Choose Contact" = "选择联系人";
+"Can't call using this device" = "不能兼容这个设备";
+"My Contacts" = "我的联系人";
+"Facebook Requires iOS 6.0" = "Facebook需要iOS6.0版本";
+"Social" = "社交";
+"No Twitter Account Set on My Device" = "我的设备上没有推特帐户设置";
+"Gadgets" = "小工具";
+"Sound - ON" = "警报器-打开";
+"Torch & Sound - ON" = "警报器&手电筒- 打开";
+"Torch - ON" = "手电筒 -  打开";
+"Done" = "完成";
+"No Location" = "没有定位";
+"Police" = "警方";
+"Fire" = "消防";
+"Hospital" = "医院";
+"Police - Phone number" = "警方 - 电话号码";
+"Fire - Phone number" = "消防 - 电话号码";
+"Hospital - Phone number" = "医院 - 电话号码";
+"Confirm" = "确认";
+"Restore saved contacts, message & location ?" = "恢复已保存的联系人，信息和位置吗 ?";
+"Information Reset" = "信息的重新设置";
+"Cancel" = "取消";
+"Ok" = "Ok";
+"Set above Numbers ?" = "设置上面的数字吗 ?";
+"Call" = "呼叫";

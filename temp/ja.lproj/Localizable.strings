@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "名前　苗字";
+"I am in need of help ASAP. I am currently at -"= "すぐに助けが必要です。私は今 - にいます。 -\n";
+"First" = "名前";
+"Last" = "苗字";
+"Choose Contact" = "連絡先を選択";
+"Can't call using this device" = "このデバイスからは通話できません。";
+"My Contacts" = "マイコンタクト";
+"Facebook Requires iOS 6.0" = "FacebookはiOS 6.0を必要としています。";
+"Social" = "ソーシャル";
+"No Twitter Account Set on My Device" = "このデバイスにはツイッターアカウントが設定されていません。";
+"Gadgets" = "ガジェット";
+"Sound - ON" = "サウンド - ON";
+"Torch & Sound - ON" = "フラッシュライト & サウンド - ON";
+"Torch - ON" = "フラッシュライト - ON";
+"Done" = "完了";
+"No Location" = "位置情報がありません";
+"Police" = "警察";
+"Fire" = "消防";
+"Hospital" = "病院";
+"Police - Phone number" = "警察 - 電話番号";
+"Fire - Phone number" = "消防 - 電話番号";
+"Hospital - Phone number" = "病院 - 電話番号";
+"Confirm" = "確定";
+"Restore saved contacts, message & location ?" = "保存した連絡先、メッセージ、位置情報を復元しますか？";
+"Information Reset" = "情報をリセット";
+"Cancel" = "キャンセル";
+"Ok" = "Ok";
+"Set above Numbers ?" = "これらの番号を登録しますか？";
+"Call" = "電話";

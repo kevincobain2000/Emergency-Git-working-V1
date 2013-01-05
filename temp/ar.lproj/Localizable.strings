@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "First Last";
+"I am in need of help ASAP. I am currently at -"="أنا في حاجة للمساعدة في اسرع وقت ممكن. وأنا حاليا متواجد في -\n";
+"First" = "First";
+"Last" = "Last";
+"Choose Contact" = "اختيار جهة التصال";
+"Can't call using this device" = "ل يمكن إجراء مكالمة باستخدام هذا الجهاز";
+"My Contacts" = "جهات التصالت الخاصة";
+"Facebook Requires iOS 6.0" = "IOS من ٦،٠ استخدام الفيسبوك يتطلب نسخة";
+"Social" = "اجتماعي";
+"No Twitter Account Set on My Device" = "لم يتم إعداد حساب تويتر";
+"Gadgets" = "الدوات";
+"Sound - ON" = "تشغيل الصوت";
+"Torch & Sound - ON" = "إشعال الضوء الكشاف";
+"Torch - ON" = "تشغيل الشعلة";
+"Done" = "تم النتهاء";
+"No Location" = "ل يوجد موقع حالي";
+"Police" = "شرطة";
+"Fire" = "إطفاء";
+"Hospital" = "مستشفى";
+"Police - Phone number" = "رقم هاتف الشرطة";
+"Fire - Phone number" = "رقم هاتف الطفاء";
+"Hospital - Phone number" = "رقم هاتف المستشفى";
+"Confirm" = "تأكيد";
+"Restore saved contacts, message & location ?" = "استعادة جهات التصالت والرسائل و المواقع المسجلة؟";
+"Information Reset" = "مسح المعلومات";
+"Cancel" = "إلغاء";
+"Ok" = "موافق";
+"Set above Numbers ?" = "إعداد الرقام المبينة أعله؟؟";
+"Call" = "إجراء اتصال";

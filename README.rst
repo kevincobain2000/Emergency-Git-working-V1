@@ -1,0 +1,93 @@
+★★★ FREE FOR A LIMITED TIME ★★★
+★ iPhone 5 iOS 6 Ready ★
+
+help.ME in any Emergency, Blackout, Molesters, Threat, Natural disasters ...
+
+★ Flashlight
+★ Sound Attention - Louder than voice !
+★ My Emergency Contact - Call, SMS, Email - Quicker than finding one in Panic !
+★ Whole World's Police, Fire & Hospital Phone Numbers
+★ Shout out help.ME on Facebook, Twitter - Someone will get help ASAP !
+★ Auto Append Geo Location - To precise Street Name
+
+
+Features
+--------
+
+▪ Beautiful on Retina Display.
+▪ Equips you with emergency gadgets and contacts.
+▪ Customizable message for any emergency, with option to appending location.
+▪ Choose one contact's Phone Number from your Address Book as Emergency Contact.
+▪ Feel free to customize default Police, Fire & Hospital Numbers to your local numbers.
+▪ Flying to a different country, just pick a new country from settings and numbers are set !
+
+
+11 Languages Supported
+----------------------
+
+Arabic, Chinese - Simplified, Dutch, English, French, Indonesian, Japanese, Korean, Malay, Spanish and Vietnamese.
+
+Notes
+-----
+
+‣ Posting on Facebook requires iOS 6.0 or above
+
+Requires
+--------
+
+✔ iOS 5 or above
+✔ iPhone 3GS, iPhone 4, 4s
+✔ Optimized for iPhone 5
+
+
+help.me, torch, flashlight, emergency, police, hospital, fire, torch, siren
+
+UPDATES
+=======
+
+SCRIPT REMOVED
+--------------
+
+::
+
+  python $HOME/Dropbox/iPhoneApps/Emergency-V/Emergency-Git/localize.py --mainIdiom=en --mainStoryboard=temp/en.lproj/MainStoryboard.storyboard fr ko vi id ms ja zh-Hans de es ar
+
+DONOT USE THE FOLLOWING
+------------------------
+
+The file localize.py must be in this directory
+::
+
+  $HOME/Dropbox/iPhoneApps/Emergency-V/Emergency-Git/localize.py
+
+or change the path by 
+
+1. click the project at the top ``temp 1 target, iOS SDK 6.0``
+2. Go to ``Build Phases``
+3. Expand ``Run Script``
+4. Change the path to ``localize.py``
+
+
+Notes
+-----
+
+::
+
+    //HERE it is Anything that you need to access for user
+    NSLog(@"Country Name: %@", [userData objectForKey:@"CountryName"]);
+    NSLog(@"Chosen Country Name: %@", [userData objectForKey:@"ChosenCountryName"]);
+    NSLog(@"Country Code: %@", [userData objectForKey:@"CountryCode"]);
+    NSLog(@"Police Number: %@", [userData objectForKey:@"Police"]);
+    NSLog(@"Fire Number: %@", [userData objectForKey:@"Fire"]);
+    NSLog(@"Hospital Number: %@", [userData objectForKey:@"Hospital"]);
+    NSLog(@"Contact Person Full Name: %@", [userData objectForKey:@"EmergencyContactPersonFullName"]);
+    NSLog(@"Contact Person Last Name: %@", [userData objectForKey:@"EmergencyContactPersonFirstName"]);
+    NSLog(@"Contact Person First Name: %@", [userData objectForKey:@"EmergencyContactPersonLastName"]);
+    NSLog(@"Contact Person Number: %@", [userData objectForKey:@"EmergencyContactPersonNumber"]);
+    //NSLog(@"Contact Person UIImage: %@", [userData objectForKey:@"EmergencyContactPersonImageData"]);
+    NSLog(@"Emergency Message: %@", [userData objectForKey:@"EmergencyMessage"]);
+    NSLog(@"Current Location: %@", [userData objectForKey:@"CurrentLocation"]);
+
+
+
+

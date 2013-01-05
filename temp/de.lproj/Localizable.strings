@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "Vorname Nachname";
+"I am in need of help ASAP. I am currently at -"="Ich benötige Hilfe so schnell wie möglich. Ich momentaner Aufenthaltsort ist -\n";
+"First" = "Vorname";
+"Last" = "Nachname";
+"Choose Contact" = "Kontakt auswählen";
+"Can't call using this device" = "Anruf mit diesem Gerät nicht möglich Reset Rücksetzen";
+"My Contacts" = "Meine Kontakte";
+"Facebook Requires iOS 6.0" = "Facebook benötigt iOS 6.0";
+"Social" = "Sozial";
+"No Twitter Account Set on My Device" = "Es ist kein Twitterkonto auf diesem Gerät definiert";
+"Gadgets" = "Zubehör";
+"Sound - ON" = "Klang - EIN";
+"Torch & Sound - ON" = "Taschenlampe und Klang - EIN";
+"Torch - ON" = "Klang - AUS";
+"Done" = "Fertig";
+"No Location" = "Kein Ort";
+"Police" = "Polizei";
+"Fire" = "Feuerwehr";
+"Hospital" = "Krankenhaus";
+"Police - Phone number" = "Polizei - Telefonnummer";
+"Fire - Phone number" = "Feuerwehr - Telefonnummer";
+"Hospital - Phone number" = "Krankenhaus - Telefonnummer";
+"Confirm" = "Bestätigen";
+"Restore saved contacts, message & location ?" = "Abgespeicherte Kontakte, Nachrichten und Orte wiederherstellen ?";
+"Information Reset" = "Informationen rücksetzen";
+"Cancel" = "Abbrechen";
+"Ok" = "Ok";
+"Set above Numbers ?" = "Oben gezeigt Nummern übernehmen ?";
+"Call" = "Anruf";

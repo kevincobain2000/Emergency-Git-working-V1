@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "성 명";
+"I am in need of help ASAP. I am currently at -"="나는 가능하면 빨리 도움이 필요합니다.\n";
+"First" = "성";
+"Last" = "명";
+"Choose Contact" = "선택 접속";
+"Can't call using this device" = "장치를 사용하여 통화 할수 없습니다.";
+"My Contacts" = "내 주소록";
+"Facebook Requires iOS 6.0" = "페이스북 요청 iOS 6.0";
+"Social" = "포털";
+"No Twitter Account Set on My Device" = "내 장치에 트위터 주소 등록안함";
+"Gadgets" = "부속품";
+"Sound - ON" = "소리 - ON";
+"Torch & Sound - ON" = "소리&조명 - ON";
+"Torch - ON" = "조명 - ON";
+"Done" = "실행";
+"No Location" = "지역설정안함";
+"Police" = "경찰";
+"Fire" = "불";
+"Hospital" = "병원";
+"Police - Phone number" = "경찰 -전화번호";
+"Fire - Phone number" = "소방서 – 전화번호";
+"Hospital - Phone number" = "병원 -전화번호";
+"Confirm" = "확인";
+"Restore saved contacts, message & location ?" = "내가 접속한 문자 지역을 복원시키겠습니까?";
+"Information Reset" = "정보 다시설정";
+"Cancel" = "취소";
+"Ok" = "Ok";
+"Set above Numbers ?" = "번호설정을 하시겠습니까?";
+"Call" = "전화걸다";

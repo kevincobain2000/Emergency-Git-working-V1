@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "Tên Họ";
+"I am in need of help ASAP. I am currently at -"="Tôi đang cần sự giúp đỡ. Bây giờ tôi đang ở tại -\n";
+"First" = "Tên";
+"Last" = "Họ";
+"Choose Contact" = "Chọn Người Liên Lạc";
+"Can't call using this device" = "Không Thể Gọi Điện Bằng Thiết Bị Này.";
+"My Contacts" = "Danh Bạ Của Tôi";
+"Facebook Requires iOS 6.0" = "Facebook Yêu Cầu Hệ Điều Hành iOS 6.0";
+"Social" = "Mạng Xã Hội";
+"No Twitter Account Set on My Device" = "Tài Khoản Twitter Chưa Được Thiết Lập Trên Thiết Bị";
+"Gadgets" = "Tiện Ích";
+"Sound - ON" = "Báo Động - BẬT";
+"Torch & Sound - ON" = "Đèn Pin & Báo Động - BẬT";
+"Torch - ON" = "Báo Động - BẬT";
+"Done" = "Hoàn Thành";
+"No Location" = "Không Có Vị Trí";
+"Police" = "Cảnh Sát";
+"Fire" = "Cứu Hỏa";
+"Hospital" = "Bệnh Viện";
+"Police - Phone number" = "Cảnh Sát - Số Điện Thoại";
+"Fire - Phone number" = "Cứu Hỏa - Số Điện Thoại";
+"Hospital - Phone number" = "Bệnh Viện - Số Điện Thoại";
+"Confirm" = "Xác Nhận";
+"Restore saved contacts, message & location ?" = "Khôi Phục Lưu Danh Bạ, Tin Nhắn & Vị Trí ?";
+"Information Reset" = "Thiết Lập Lại Thông Tin";
+"Cancel" = "Hủy Bỏ";
+"Ok" = "Hoàn Thành";
+"Set above Numbers ?" = "Thiết Lập Số Trên ?";
+"Call" = "Gọi";

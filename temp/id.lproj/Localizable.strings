@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+
+"First Last"= "Etel nama";
+"I am in need of help ASAP. I am currently at -"="Aku butuh bantuan segera. Saat ini aku di -\n";
+"First" = "Setel";
+"Last" = "Nama";
+"Choose Contact" = "Pilih kontak";
+"Can't call using this device" = "Perangkat ini tidak dapat digunakan untuk melakukan panggilan";
+"My Contacts" = "Kontak";
+"Facebook Requires iOS 6.0" = "Facebook membutuhkan iOS 6.0";
+"Social" = "Jaringan sosial";
+"No Twitter Account Set on My Device" = "Tidak ada Akun Twitter yang diatur di perangkat ini";
+"Gadgets" = "Perangkat";
+"Sound - ON" = "Suara - hidup";
+"Torch & Sound - ON" = "Senter & suara - hidup";
+"Torch - ON" = "Senter - nyala";
+"Done" = "Selesai";
+"No Location" = "Lokasi tidak ada";
+"Police" = "Polisi";
+"Fire" = "Pemadam kebakaran";
+"Hospital" = "Rumah sakit";
+"Police - Phone number" = "Polisi - nomor telepon";
+"Fire - Phone number" = "Pemadam kebakaran - nomor telepon";
+"Hospital - Phone number" = "Rumah sakit - nomor telepon";
+"Confirm" = "Konfirmasi";
+"Restore saved contacts, message & location ?" = "Simpan kontak, pesan & lokasi?";
+"Information Reset" = "Atur ulang informasi";
+"Cancel" = "Batal";
+"Ok" = "Ok";
+"Set above Numbers ?" = "Set nomor di atas ?";
+"Call" = "Memanggil";
