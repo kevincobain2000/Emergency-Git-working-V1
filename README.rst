@@ -1,4 +1,11 @@
-★★★ FREE FOR A LIMITED TIME ★★★
+NEXT TO DO
+==========
+
+1. Make Flashlight button to SOS 
+2. While submitting update CHANGE THE KEYWORDS TO RESPECTIVE LANGUAGES
+3. Add info button for latest updates on the earthquake api (http://earthquake.usgs.gov/earthquakes/catalogs/eqs1day-M2.5.txt)
+
+
 ★ iPhone 5 iOS 6 Ready ★
 
 help.ME in any Emergency, Blackout, Molesters, Threat, Natural disasters ...
