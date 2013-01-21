@@ -35,6 +35,11 @@ Spanish
 
 Emergencia, Sonido, contacto, Llamar, Policía, Fuego, Hospital, País 
 
+arabic
+حالة طوارئ, صوت, إجراء اتصال, شرطة, إطفاء, مستشفى, البلد
+
+german
+Notfall, Taschenlampe, Klang, Polizei, Feuerwehr, Krankenhaus
 
 NEXT TO DO
 ==========
