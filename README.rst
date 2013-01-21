@@ -1,3 +1,41 @@
+Keywords
+--------------
+English
+
+emergency, police, hospital, fire, siren, shout out, countries, help contact numbers
+
+Chinese
+
+紧急情况, 呼叫, 警方, 消防, 医院, 国家, 根据位置
+
+Indonesian
+
+darurat, suara, memanggil, polisi, pemadam kebakaran, rumah sakit, kontak, negara
+
+Malay
+
+Kecemasan, Lampu Suluh, Bunyi, Pilih Hubungi, Panggil, Polis, Pemadam Kebakaran, Negara 
+
+French
+
+urgences, Son, contact, Appel, Police, Feu, Hôpital, Pays
+
+Japanese
+
+緊急, サウンド, 電話 , コンタクト, 国, 警察, 消防, 病院
+
+korean
+
+경고, 소리, 전화걸다, 경찰, 불, 병원, 국가
+
+Vietnamese
+Khẩn Cấp , Báo Động, Cảnh Sát, Cứu Hỏa, Bệnh Viện, Đất Nước
+
+Spanish
+
+Emergencia, Sonido, contacto, Llamar, Policía, Fuego, Hospital, País 
+
+
 NEXT TO DO
 ==========
 
