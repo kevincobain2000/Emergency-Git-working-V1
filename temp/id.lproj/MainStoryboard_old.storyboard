@@ -920,6 +920,82 @@
         <image name="volume_128b_1.png" width="128" height="128"/>
         <image name="volume_128b_4.png" width="128" height="128"/>
     </resources>
+    <classes>
+        <class className="CountryNumbersViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CountryNumbersViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="alertToSetNumbers"/>
+                <relationship kind="action" name="buttonDonePressed:"/>
+                <relationship kind="action" name="cancelPressed:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="CountryPicker" superclassName="UIPickerView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CountryPicker.h"/>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+        </class>
+        <class className="MTAnimatedLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MTAnimatedLabel.h"/>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="accessAddressBook"/>
+                <relationship kind="action" name="alertToReset"/>
+                <relationship kind="outlet" name="cellAddLocation" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellEmergencyPerson" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellFireOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellHospitalOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellMyCountry" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellPoliceOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellResetOutlet" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonChooseContactPressed:"/>
+                <relationship kind="action" name="buttonEmailPressed:"/>
+                <relationship kind="action" name="buttonFacebookPressed:"/>
+                <relationship kind="action" name="buttonFireCallPressed:"/>
+                <relationship kind="action" name="buttonFlashPressed:"/>
+                <relationship kind="action" name="buttonHospitalCallPressed:"/>
+                <relationship kind="action" name="buttonInfoPressed:"/>
+                <relationship kind="action" name="buttonPersonCallPressed:"/>
+                <relationship kind="action" name="buttonPoliceCallPressed:"/>
+                <relationship kind="action" name="buttonSMSPressed:"/>
+                <relationship kind="action" name="buttonSoundPressed:"/>
+                <relationship kind="action" name="buttonTwitterPressed:"/>
+                <relationship kind="outlet" name="barItemSettingsOutlet" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="buttonCallFireOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallHospitalOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallPersonOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallPoliceOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonChooseContactIcon" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonChooseContactOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFacebookOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFlashLightOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFlashOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonSoundOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonTwitterOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageViewContactPerson" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelContactPersonNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelContactsHeaderOutlet" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelEmailAddress" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelFireNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelFirstName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelGadgetsHeader" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelHospitalNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelLastName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelPoliceNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelSocialHeader" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="viewPolice" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

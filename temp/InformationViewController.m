@@ -20,7 +20,7 @@
     MGScrollView *scroller;
     
 }
-static NSDictionary *countryNamesByCode = nil;
+//static NSDictionary *countryNamesByCode = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,7 +35,7 @@ static NSDictionary *countryNamesByCode = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.title = NSLocalizedString(@"Updates", @"Updates");
     //Start the Header for the updates
     UIFont *headerFont = [UIFont fontWithName:@"ArialHebrew" size:16];
     // make an MGScrollView for holding boxes
@@ -58,8 +58,8 @@ static NSDictionary *countryNamesByCode = nil;
     //End the header for the Earthquakes
     
     //Get the Names of country from the country Code
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Countries" ofType:@"plist"];
-    countryNamesByCode = [[NSDictionary alloc] initWithContentsOfFile:path];
+    //NSString *path = [[NSBundle mainBundle] pathForResource:@"Countries" ofType:@"plist"];
+    //countryNamesByCode = [[NSDictionary alloc] initWithContentsOfFile:path];
     //End getting the names
     
     //Parse the updates from the api Magnitude + 2.5
@@ -77,20 +77,26 @@ static NSDictionary *countryNamesByCode = nil;
         NSArray *listItems = [object componentsSeparatedByString:@","];
 
         
-        if ([listItems count] > 10 && [countryNamesByCode objectForKey:[[listItems objectAtIndex:0] uppercaseString]]) {
+        if ([listItems count] > 10 ) {
+            
             
             MGStyledBox *boxI = [MGStyledBox box];
             [scroller.boxes addObject:boxI];
             
             //Country Name
-            NSString *leftString = [NSString stringWithFormat:@"%@",[countryNamesByCode objectForKey:[[listItems objectAtIndex:0] uppercaseString]]];
-            NSString *rightString = [NSString stringWithFormat:@"Magnitude %@",[listItems objectAtIndex:8]];
+            NSString *region = [NSString stringWithFormat:@"%@",[listItems objectAtIndex:11]] ;
+            NSString *leftString = [region stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+            NSString *rightString = [NSString stringWithFormat:@"M %@",[listItems objectAtIndex:8]];
+            
             
             MGBoxLine *headI = [MGBoxLine lineWithLeft:leftString right:rightString];
+            
             headI.font = headerFont;
             [boxI.topLines addObject:headI];
-                
-            NSString *inMainBox = [NSString stringWithFormat:@"Region %@\n%@ %@ %@",[listItems objectAtIndex:11],[listItems objectAtIndex:3], [listItems objectAtIndex:4], [listItems objectAtIndex:5] ];
+            
+           
+            NSString *utcDate = [NSString stringWithFormat:@"%@ %@ %@",[listItems objectAtIndex:3], [listItems objectAtIndex:4],  [[listItems objectAtIndex:5] substringToIndex:11]];
+            NSString *inMainBox = [utcDate stringByReplacingOccurrencesOfString:@"\"" withString:@""];
             
             
             MGBoxLine *multiI = [MGBoxLine multilineWithText:inMainBox font:nil padding:24];
@@ -98,72 +104,9 @@ static NSDictionary *countryNamesByCode = nil;
             [boxI.topLines addObject:multiI];
             
             
-            /*
-            NSLog(@"Day, Date, Time %@ %@ %@",[listItems objectAtIndex:3], [listItems objectAtIndex:4], [listItems objectAtIndex:5]);
-            NSLog(@"Region %@",[listItems objectAtIndex:11]);
-            NSLog(@"CountryCode %@",[countryNamesByCode objectForKey:[[listItems objectAtIndex:0] uppercaseString]]);
-            NSLog(@"Magnitude %@",[listItems objectAtIndex:8]);
-             */
-            
         }
         
     }
-    
-    
-    
-    
-	
-    
-    /*
-    NSEnumerator *enumerator = [sharedData.jsonResults keyEnumerator];
-    NSLog(@"%i",[sharedData.jsonResults count]);
-    id key;
-    while ((key = [enumerator nextObject])) {
-        NSDictionary *tmp = [sharedData.jsonResults objectForKey:key];
-        
-        MGStyledBox *boxI = [MGStyledBox box];
-        [scroller.boxes addObject:boxI];
-        
-        float pos = [[tmp objectForKey:@"Pos"] floatValue];
-        float neg = [[tmp objectForKey:@"Neg"] floatValue];
-        float sub = [[tmp objectForKey:@"Subjectivity"] floatValue];
-        float obj = [[tmp objectForKey:@"Objectivity"] floatValue];
-        
-        NSString *leftString = [NSString alloc];
-        NSString *rightString = [NSString alloc];
-        if (pos >= neg) {
-            leftString = [NSString stringWithFormat:@"Happy = %i%%", (int) (pos*100) ];
-            
-        }
-        else{
-            leftString = [NSString stringWithFormat:@"Sad = %i%%", (int) (neg*100)];
-        }
-        if (sub >= obj) {
-            rightString = [NSString stringWithFormat:@"Subjective = %i%%", (int) (sub*100)];
-        }
-        else{
-            rightString = [NSString stringWithFormat:@"Objective = %i%%", (int) (obj*100)];
-        }
-        
-        MGBoxLine *headI = [MGBoxLine lineWithLeft:leftString right:rightString];
-        headI.font = headerFont;
-        if (pos >= neg) {
-            headI.textColor = [UIColor darkGrayColor];
-            
-        }
-        else{
-            headI.textColor = [UIColor redColor];
-        }
-        
-        
-        [boxI.topLines addObject:headI];
-        
-        NSString *tweetI = [tmp objectForKey:@"Tweet"];
-        MGBoxLine *multiI = [MGBoxLine multilineWithText:tweetI font:nil padding:24];
-        [boxI.topLines addObject:multiI];
-        
-    }
-    */
     
     [scroller drawBoxesWithSpeed:ANIM_SPEED];
     [scroller flashScrollIndicators];

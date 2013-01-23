@@ -100,7 +100,7 @@ SCRIPT REMOVED
 
 ::
 
-  python $HOME/Dropbox/iPhoneApps/Emergency-V/Emergency-Git/localize.py --mainIdiom=en --mainStoryboard=temp/en.lproj/MainStoryboard.storyboard fr ko vi id ms ja zh-Hans de es ar
+  python /Users/kevincobain2000/Documents/iPhoneApps/Emergency-V/localize.py --mainIdiom=en --mainStoryboard=temp/en.lproj/MainStoryboard.storyboard fr ko vi id ms ja zh-Hans de es ar
 
 DONOT USE THE FOLLOWING
 ------------------------

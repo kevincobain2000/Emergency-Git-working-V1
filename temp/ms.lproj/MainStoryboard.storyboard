@@ -53,10 +53,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="toS-2a-t9F">
-                                        <rect key="frame" x="219" y="465" width="89" height="88"/>
+                                        <rect key="frame" x="232" y="474" width="62" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                        <inset key="imageEdgeInsets" minX="17" minY="12" maxX="20" maxY="20"/>
                                         <state key="normal" image="info.png">
                                             <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -366,7 +365,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W90-PN-B4e">
-                                        <rect key="frame" x="30" y="477" width="54" height="53"/>
+                                        <rect key="frame" x="38" y="477" width="54" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="facebook_256.png">
@@ -904,7 +903,7 @@
         <image name="globe_24.png" width="24" height="24"/>
         <image name="hospital_26b.png" width="26" height="26"/>
         <image name="image_contact_128.png" width="128" height="117"/>
-        <image name="info.png" width="128" height="128"/>
+        <image name="info.png" width="64" height="64"/>
         <image name="ipad-arrow.png" width="9" height="14"/>
         <image name="ipad-button-blue-pressed.png" width="156" height="49"/>
         <image name="ipad-button-blue.png" width="157" height="49"/>
@@ -920,6 +919,82 @@
         <image name="volume_128b_1.png" width="128" height="128"/>
         <image name="volume_128b_4.png" width="128" height="128"/>
     </resources>
+    <classes>
+        <class className="CountryNumbersViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CountryNumbersViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="alertToSetNumbers"/>
+                <relationship kind="action" name="buttonDonePressed:"/>
+                <relationship kind="action" name="cancelPressed:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="CountryPicker" superclassName="UIPickerView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CountryPicker.h"/>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+        </class>
+        <class className="MTAnimatedLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MTAnimatedLabel.h"/>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="accessAddressBook"/>
+                <relationship kind="action" name="alertToReset"/>
+                <relationship kind="outlet" name="cellAddLocation" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellEmergencyPerson" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellFireOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellHospitalOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellMyCountry" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellPoliceOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellResetOutlet" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonChooseContactPressed:"/>
+                <relationship kind="action" name="buttonEmailPressed:"/>
+                <relationship kind="action" name="buttonFacebookPressed:"/>
+                <relationship kind="action" name="buttonFireCallPressed:"/>
+                <relationship kind="action" name="buttonFlashPressed:"/>
+                <relationship kind="action" name="buttonHospitalCallPressed:"/>
+                <relationship kind="action" name="buttonInfoPressed:"/>
+                <relationship kind="action" name="buttonPersonCallPressed:"/>
+                <relationship kind="action" name="buttonPoliceCallPressed:"/>
+                <relationship kind="action" name="buttonSMSPressed:"/>
+                <relationship kind="action" name="buttonSoundPressed:"/>
+                <relationship kind="action" name="buttonTwitterPressed:"/>
+                <relationship kind="outlet" name="barItemSettingsOutlet" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="buttonCallFireOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallHospitalOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallPersonOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallPoliceOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonChooseContactIcon" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonChooseContactOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFacebookOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFlashLightOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFlashOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonSoundOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonTwitterOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageViewContactPerson" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelContactPersonNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelContactsHeaderOutlet" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelEmailAddress" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelFireNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelFirstName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelGadgetsHeader" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelHospitalNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelLastName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelPoliceNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelSocialHeader" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="viewPolice" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
