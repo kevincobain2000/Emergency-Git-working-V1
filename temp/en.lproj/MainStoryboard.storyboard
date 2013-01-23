@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YKE-rt-JM7">
-                                        <rect key="frame" x="50" y="46" width="89" height="89"/>
+                                        <rect key="frame" x="20" y="46" width="89" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                         <inset key="imageEdgeInsets" minX="20" minY="24" maxX="22" maxY="30"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cQu-xs-pZ5">
-                                        <rect key="frame" x="192" y="46" width="89" height="89"/>
+                                        <rect key="frame" x="125" y="46" width="89" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                         <inset key="imageEdgeInsets" minX="17" minY="12" maxX="20" maxY="20"/>
@@ -50,6 +50,27 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonSoundPressed:" destination="2" eventType="touchUpInside" id="bJI-RK-i9K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="toS-2a-t9F">
+                                        <rect key="frame" x="222" y="47" width="89" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <inset key="imageEdgeInsets" minX="17" minY="12" maxX="20" maxY="20"/>
+                                        <state key="normal" image="info.png">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonInfoPressed:" destination="2" eventType="touchUpInside" id="8n1-iT-ebt"/>
+                                            <segue destination="tQI-1A-dPK" kind="push" id="YCp-UJ-vmM"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" id="qeR-sv-fwu">
@@ -178,14 +199,6 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.95686280727386475" green="0.95686280727386475" blue="0.95686280727386475" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Torch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="xEZ-I6-8fx">
-                                        <rect key="frame" x="50" y="112" width="89" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gadgets" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="U55-VA-DjZ" customClass="MTAnimatedLabel">
                                         <rect key="frame" x="0.0" y="6" width="320" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -209,15 +222,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
-                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="3mj-P7-uH4">
-                                        <rect key="frame" x="194" y="112" width="89" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
@@ -430,14 +434,28 @@
                         <outlet property="labelLastName" destination="ELR-ps-7Ml" id="DB7-RI-FYC"/>
                         <outlet property="labelPoliceNumber" destination="6q4-93-71N" id="aXP-WU-EA4"/>
                         <outlet property="labelSocialHeader" destination="pgv-MW-lIt" id="pPW-Qb-1Tc"/>
-                        <outlet property="labelSoundOutlet" destination="3mj-P7-uH4" id="Cf3-Vv-Pqw"/>
                         <outlet property="scrollView" destination="Nc9-Cq-uBk" id="z6U-kz-kcb"/>
                         <outlet property="viewPolice" destination="gev-yI-jGL" id="Clv-hi-Xf1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272" y="26"/>
+            <point key="canvasLocation" x="248" y="303"/>
+        </scene>
+        <!--Information View Controller - Updates-->
+        <scene sceneID="foc-CT-hNN">
+            <objects>
+                <viewController id="tQI-1A-dPK" customClass="InformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EHZ-ZF-hhK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Updates" id="qwy-Pr-KVy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbe-Pn-VOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="-307"/>
         </scene>
         <!--Settings View Controller - Settings-->
         <scene sceneID="Qow-BD-Xlo">
@@ -885,6 +903,7 @@
         <image name="globe_24.png" width="24" height="24"/>
         <image name="hospital_26b.png" width="26" height="26"/>
         <image name="image_contact_128.png" width="128" height="117"/>
+        <image name="info.png" width="128" height="128"/>
         <image name="ipad-arrow.png" width="9" height="14"/>
         <image name="ipad-button-blue-pressed.png" width="156" height="49"/>
         <image name="ipad-button-blue.png" width="157" height="49"/>
@@ -900,6 +919,83 @@
         <image name="volume_128b_1.png" width="128" height="128"/>
         <image name="volume_128b_4.png" width="128" height="128"/>
     </resources>
+    <classes>
+        <class className="CountryNumbersViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CountryNumbersViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="alertToSetNumbers"/>
+                <relationship kind="action" name="buttonDonePressed:"/>
+                <relationship kind="action" name="cancelPressed:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="CountryPicker" superclassName="UIPickerView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CountryPicker.h"/>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+        </class>
+        <class className="MTAnimatedLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MTAnimatedLabel.h"/>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="accessAddressBook"/>
+                <relationship kind="action" name="alertToReset"/>
+                <relationship kind="outlet" name="cellAddLocation" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellEmergencyPerson" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellFireOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellHospitalOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellMyCountry" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellPoliceOutlet" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="cellResetOutlet" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonChooseContactPressed:"/>
+                <relationship kind="action" name="buttonEmailPressed:"/>
+                <relationship kind="action" name="buttonFacebookPressed:"/>
+                <relationship kind="action" name="buttonFireCallPressed:"/>
+                <relationship kind="action" name="buttonFlashPressed:"/>
+                <relationship kind="action" name="buttonHospitalCallPressed:"/>
+                <relationship kind="action" name="buttonInfoPressed:"/>
+                <relationship kind="action" name="buttonPersonCallPressed:"/>
+                <relationship kind="action" name="buttonPoliceCallPressed:"/>
+                <relationship kind="action" name="buttonSMSPressed:"/>
+                <relationship kind="action" name="buttonSoundPressed:"/>
+                <relationship kind="action" name="buttonTwitterPressed:"/>
+                <relationship kind="outlet" name="barItemSettingsOutlet" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="buttonCallFireOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallHospitalOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallPersonOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonCallPoliceOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonChooseContactIcon" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonChooseContactOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFacebookOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFlashLightOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonFlashOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonSoundOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonTwitterOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageViewContactPerson" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelContactPersonNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelContactsHeaderOutlet" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelEmailAddress" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelFireNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelFirstName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelGadgetsHeader" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelHospitalNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelLastName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelPoliceNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelSocialHeader" candidateClass="MTAnimatedLabel"/>
+                <relationship kind="outlet" name="labelSoundOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="viewPolice" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

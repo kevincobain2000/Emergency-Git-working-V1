@@ -40,6 +40,7 @@
 -(void)getEmergencyText;
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+- (IBAction)buttonInfoPressed:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonFlashLightOutlet;
 
@@ -88,7 +89,7 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonChooseContactOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *buttonChooseContactIcon;
-@property (strong, nonatomic) IBOutlet UILabel *labelSoundOutlet;
+
 @property (strong, nonatomic) IBOutlet MTAnimatedLabel *labelContactsHeaderOutlet;
 
 - (IBAction)buttonEmailPressed:(id)sender;

@@ -591,7 +591,6 @@
     [self setBarItemSettingsOutlet:nil];
     [self setButtonSoundOutlet:nil];
     [self setButtonFlashOutlet:nil];
-    [self setLabelSoundOutlet:nil];
     [self setLabelPoliceNumber:nil];
     [self setLabelFireNumber:nil];
     [self setLabelHospitalNumber:nil];
@@ -612,4 +611,6 @@
 
 
 
+- (IBAction)buttonInfoPressed:(id)sender {
+}
 @end
