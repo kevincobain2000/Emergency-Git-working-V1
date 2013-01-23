@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreLocation/CoreLocation.h>
 @class MGBox;
-@interface InformationViewController : UIViewController <UIScrollViewDelegate>
+@interface InformationViewController : UIViewController <UIScrollViewDelegate, CLLocationManagerDelegate>{
+    
+    CLLocationManager *LocationManager;
+    CLGeocoder *geocoder;
+    double place1Long;
+    double place1Lat;
+    float distanceBetweenTwo;
+}
 
 - (MGBox *)parentBoxOf:(UIView *)view;
 @end

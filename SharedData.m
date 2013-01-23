@@ -60,13 +60,12 @@
     [userData setObject:[[CountriesCodesAndNumbers objectForKey:countryCode] objectAtIndex:0] forKey:@"Hospital"];
     
     [userData setObject:NSLocalizedString(@"First Last", @"First Last") forKey:@"EmergencyContactPersonFullName"];
-    //[userData setObject:@"First Last" forKey:@"EmergencyContactPersonFullName"];
+
     
     [userData setObject:NSLocalizedString(@"First", @"First") forKey:@"EmergencyContactPersonFirstName"];
-    //[userData setObject:@"First" forKey:@"EmergencyContactPersonFirstName"];
     
     [userData setObject:NSLocalizedString(@"Last", @"Last") forKey:@"EmergencyContactPersonLastName"];
-    //[userData setObject:@"Last" forKey:@"EmergencyContactPersonLastName"];
+
     
     [userData setObject:NSLocalizedString(@"Choose Contact", @"Choose Contact") forKey:@"EmergencyContactPersonNumber"];
     //[userData setObject:@"Choose Contact" forKey:@"EmergencyContactPersonNumber"];
