@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YKE-rt-JM7">
-                                        <rect key="frame" x="50" y="46" width="89" height="89"/>
+                                        <rect key="frame" x="35" y="46" width="89" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                         <inset key="imageEdgeInsets" minX="20" minY="24" maxX="22" maxY="30"/>
@@ -50,6 +50,27 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonSoundPressed:" destination="2" eventType="touchUpInside" id="bJI-RK-i9K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="toS-2a-t9F">
+                                        <rect key="frame" x="219" y="465" width="89" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <inset key="imageEdgeInsets" minX="17" minY="12" maxX="20" maxY="20"/>
+                                        <state key="normal" image="info.png">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonInfoPressed:" destination="2" eventType="touchUpInside" id="8n1-iT-ebt"/>
+                                            <segue destination="tQI-1A-dPK" kind="push" id="YCp-UJ-vmM"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" id="qeR-sv-fwu">
@@ -179,14 +200,6 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.95686280727386475" green="0.95686280727386475" blue="0.95686280727386475" alpha="1" colorSpace="deviceRGB"/>
                                     </view>
-                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lampu Suluh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="xEZ-I6-8fx">
-                                        <rect key="frame" x="50" y="112" width="89" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Alat" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="U55-VA-DjZ" customClass="MTAnimatedLabel">
                                         <rect key="frame" x="0.0" y="6" width="320" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -210,15 +223,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
-                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bunyi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="3mj-P7-uH4">
-                                        <rect key="frame" x="194" y="112" width="89" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
@@ -285,7 +289,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="mbC-f0-uk0">
                                                 <rect key="frame" x="5" y="36" width="85" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <inset key="titleEdgeInsets" minX="-14" minY="1" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="-5" minY="4" maxX="0.0" maxY="4"/>
                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -362,7 +366,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W90-PN-B4e">
-                                        <rect key="frame" x="79" y="477" width="54" height="53"/>
+                                        <rect key="frame" x="30" y="477" width="54" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="facebook_256.png">
@@ -377,7 +381,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bMA-6y-jjG">
-                                        <rect key="frame" x="186" y="477" width="54" height="53"/>
+                                        <rect key="frame" x="142" y="477" width="54" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="twitter_256g.png">
@@ -431,14 +435,28 @@
                         <outlet property="labelLastName" destination="ELR-ps-7Ml" id="DB7-RI-FYC"/>
                         <outlet property="labelPoliceNumber" destination="6q4-93-71N" id="aXP-WU-EA4"/>
                         <outlet property="labelSocialHeader" destination="pgv-MW-lIt" id="pPW-Qb-1Tc"/>
-                        <outlet property="labelSoundOutlet" destination="3mj-P7-uH4" id="Cf3-Vv-Pqw"/>
                         <outlet property="scrollView" destination="Nc9-Cq-uBk" id="z6U-kz-kcb"/>
                         <outlet property="viewPolice" destination="gev-yI-jGL" id="Clv-hi-Xf1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272" y="26"/>
+            <point key="canvasLocation" x="248" y="303"/>
+        </scene>
+        <!--Information View Controller - Updates-->
+        <scene sceneID="foc-CT-hNN">
+            <objects>
+                <viewController id="tQI-1A-dPK" customClass="InformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EHZ-ZF-hhK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Updates" id="qwy-Pr-KVy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbe-Pn-VOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="-307"/>
         </scene>
         <!--Settings View Controller - Tetapan-->
         <scene sceneID="Qow-BD-Xlo">
@@ -579,7 +597,7 @@
                             <tableViewSection footerTitle="Kontak person saya dalam Kecemasan" id="1fe-ug-VhA">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="LXP-T7-DKN" detailTextLabel="KeZ-5O-Pup" imageView="JVV-89-XFC" rowHeight="38" style="IBUITableViewCellStyleValue1" id="O7K-yw-4lf">
-                                        <rect key="frame" x="0.0" y="265" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="234" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="37"/>
@@ -611,7 +629,7 @@
                             <tableViewSection headerTitle="Mesej Saya" footerTitle="Mesej teks auto saya untuk SMS, Facebook &amp; Twitter" id="r20-pZ-9rY">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="oCK-hY-KxD" imageView="mqB-fm-pyw" rowHeight="37" style="IBUITableViewCellStyleDefault" id="KV5-qy-Wrc">
-                                        <rect key="frame" x="0.0" y="382" width="320" height="38"/>
+                                        <rect key="frame" x="0.0" y="351" width="320" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="36"/>
@@ -634,7 +652,7 @@
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="L5j-Xv-RLE" detailTextLabel="Q7G-lh-drO" imageView="Eqb-yP-2gU" rowHeight="48" style="IBUITableViewCellStyleSubtitle" id="fJT-M1-Ns5">
-                                        <rect key="frame" x="0.0" y="420" width="320" height="49"/>
+                                        <rect key="frame" x="0.0" y="389" width="320" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="47"/>
@@ -668,7 +686,7 @@
                             <tableViewSection headerTitle="" footerTitle="Kembalikan kenalan, mesej &amp; lokasi" id="cEy-jH-Nzv">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="NVX-D5-QkX" rowHeight="39" style="IBUITableViewCellStyleDefault" id="JEi-Xe-CjB">
-                                        <rect key="frame" x="0.0" y="539" width="320" height="41"/>
+                                        <rect key="frame" x="0.0" y="508" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="38"/>
@@ -886,6 +904,7 @@
         <image name="globe_24.png" width="24" height="24"/>
         <image name="hospital_26b.png" width="26" height="26"/>
         <image name="image_contact_128.png" width="128" height="117"/>
+        <image name="info.png" width="128" height="128"/>
         <image name="ipad-arrow.png" width="9" height="14"/>
         <image name="ipad-button-blue-pressed.png" width="156" height="49"/>
         <image name="ipad-button-blue.png" width="157" height="49"/>
