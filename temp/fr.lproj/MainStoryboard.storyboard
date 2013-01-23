@@ -597,7 +597,7 @@
                             <tableViewSection footerTitle="A contacter en cas d’urgence" id="1fe-ug-VhA">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="LXP-T7-DKN" detailTextLabel="KeZ-5O-Pup" imageView="JVV-89-XFC" rowHeight="38" style="IBUITableViewCellStyleValue1" id="O7K-yw-4lf">
-                                        <rect key="frame" x="0.0" y="234" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="265" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="37"/>
@@ -629,7 +629,7 @@
                             <tableViewSection headerTitle="Mes Message" footerTitle="Mon message automatique pour SMS, FB et Twitter" id="r20-pZ-9rY">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="oCK-hY-KxD" imageView="mqB-fm-pyw" rowHeight="37" style="IBUITableViewCellStyleDefault" id="KV5-qy-Wrc">
-                                        <rect key="frame" x="0.0" y="351" width="320" height="38"/>
+                                        <rect key="frame" x="0.0" y="382" width="320" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="36"/>
@@ -652,7 +652,7 @@
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="L5j-Xv-RLE" detailTextLabel="Q7G-lh-drO" imageView="Eqb-yP-2gU" rowHeight="48" style="IBUITableViewCellStyleSubtitle" id="fJT-M1-Ns5">
-                                        <rect key="frame" x="0.0" y="389" width="320" height="49"/>
+                                        <rect key="frame" x="0.0" y="420" width="320" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="47"/>
@@ -686,7 +686,7 @@
                             <tableViewSection headerTitle="" footerTitle="Restaurer contact, message et localization sauvegardés" id="cEy-jH-Nzv">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="2" indentationWidth="0.0" textLabel="NVX-D5-QkX" rowHeight="39" style="IBUITableViewCellStyleDefault" id="JEi-Xe-CjB">
-                                        <rect key="frame" x="0.0" y="508" width="320" height="41"/>
+                                        <rect key="frame" x="0.0" y="539" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="38"/>
@@ -904,7 +904,7 @@
         <image name="globe_24.png" width="24" height="24"/>
         <image name="hospital_26b.png" width="26" height="26"/>
         <image name="image_contact_128.png" width="128" height="117"/>
-        <image name="info.png" width="128" height="128"/>
+        <image name="info.png" width="64" height="64"/>
         <image name="ipad-arrow.png" width="9" height="14"/>
         <image name="ipad-button-blue-pressed.png" width="156" height="49"/>
         <image name="ipad-button-blue.png" width="157" height="49"/>

@@ -18,7 +18,9 @@
 
 @implementation InformationViewController{
     MGScrollView *scroller;
+    
 }
+static NSDictionary *countryNamesByCode = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,11 +31,13 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	UIFont *headerFont = [UIFont fontWithName:@"ArialHebrew" size:16];
     
+    //Start the Header for the updates
+    UIFont *headerFont = [UIFont fontWithName:@"ArialHebrew" size:16];
     // make an MGScrollView for holding boxes
     CGFloat scrollHeight = 420;
     if (IsRunningTallPhone()) {
@@ -47,9 +51,68 @@
     
     MGStyledBox *box2 = [MGStyledBox box];
     [scroller.boxes addObject:box2];
-    MGBoxLine *head2 = [MGBoxLine lineWithLeft:@"Earthquakes" right:nil];
+    MGBoxLine *head2 = [MGBoxLine lineWithLeft:NSLocalizedString(@"Earthquakes", @"Earthquakes") right:nil];
     head2.font = headerFont;
+    
     [box2.topLines addObject:head2];
+    //End the header for the Earthquakes
+    
+    //Get the Names of country from the country Code
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Countries" ofType:@"plist"];
+    countryNamesByCode = [[NSDictionary alloc] initWithContentsOfFile:path];
+    //End getting the names
+    
+    //Parse the updates from the api Magnitude + 2.5
+    NSString* myFile = [NSString stringWithFormat:@"http://earthquake.usgs.gov/earthquakes/catalogs/eqs1day-M2.5.txt"];
+    NSString* myFileURLString = [myFile stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+    NSData *myFileData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:myFileURLString]];
+    NSString *returnedMyFileContents=[[NSString alloc] initWithData:myFileData encoding:NSASCIIStringEncoding];
+    NSArray *returnedList = [returnedMyFileContents componentsSeparatedByString:@"\n"];
+    //Parsing Complete into array with each line
+    //Note that the top line is only 10 commas because of the date in others
+    
+    NSEnumerator *e = [returnedList objectEnumerator];
+    id object;
+    while (object = [e nextObject]) {
+        NSArray *listItems = [object componentsSeparatedByString:@","];
+
+        
+        if ([listItems count] > 10 && [countryNamesByCode objectForKey:[[listItems objectAtIndex:0] uppercaseString]]) {
+            
+            MGStyledBox *boxI = [MGStyledBox box];
+            [scroller.boxes addObject:boxI];
+            
+            //Country Name
+            NSString *leftString = [NSString stringWithFormat:@"%@",[countryNamesByCode objectForKey:[[listItems objectAtIndex:0] uppercaseString]]];
+            NSString *rightString = [NSString stringWithFormat:@"Magnitude %@",[listItems objectAtIndex:8]];
+            
+            MGBoxLine *headI = [MGBoxLine lineWithLeft:leftString right:rightString];
+            headI.font = headerFont;
+            [boxI.topLines addObject:headI];
+                
+            NSString *inMainBox = [NSString stringWithFormat:@"Region %@\n%@ %@ %@",[listItems objectAtIndex:11],[listItems objectAtIndex:3], [listItems objectAtIndex:4], [listItems objectAtIndex:5] ];
+            
+            
+            MGBoxLine *multiI = [MGBoxLine multilineWithText:inMainBox font:nil padding:24];
+            multiI.textColor = [UIColor grayColor];
+            [boxI.topLines addObject:multiI];
+            
+            
+            /*
+            NSLog(@"Day, Date, Time %@ %@ %@",[listItems objectAtIndex:3], [listItems objectAtIndex:4], [listItems objectAtIndex:5]);
+            NSLog(@"Region %@",[listItems objectAtIndex:11]);
+            NSLog(@"CountryCode %@",[countryNamesByCode objectForKey:[[listItems objectAtIndex:0] uppercaseString]]);
+            NSLog(@"Magnitude %@",[listItems objectAtIndex:8]);
+             */
+            
+        }
+        
+    }
+    
+    
+    
+    
+	
     
     /*
     NSEnumerator *enumerator = [sharedData.jsonResults keyEnumerator];
