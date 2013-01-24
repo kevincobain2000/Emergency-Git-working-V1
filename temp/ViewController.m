@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
-
+#define IsRunningTallPhone() ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568)
 @interface ViewController ()
 
 @end
@@ -167,7 +167,7 @@
 }
 
 -(void)settingScrollViewSize{
-    if (IS_HEIGHT_GTE_568){
+    if (IsRunningTallPhone()){
         self.scrollView.contentSize = CGSizeMake(320, SCROLL_HEIGHT-30);
     }
     else{

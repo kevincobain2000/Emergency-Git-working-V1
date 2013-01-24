@@ -57,8 +57,9 @@
     LocationManager.delegate = self;
     [LocationManager startUpdatingLocation];
     
+    self.navigationItem.title = NSLocalizedString(@"Updates", @"Updates");
     
-    self.title = NSLocalizedString(@"Updates", @"Updates");
+    //self.title = NSLocalizedString(@"Updates", @"Updates");
     //Start the Header for the updates
     UIFont *headerFont = [UIFont fontWithName:@"ArialHebrew" size:16];
     // make an MGScrollView for holding boxes
@@ -66,7 +67,7 @@
     if (IsRunningTallPhone()) {
         scrollHeight = 520;
     }
-    CGRect frame = CGRectMake(0, 0, 320, scrollHeight);
+    CGRect frame = CGRectMake(0, 45, 320, scrollHeight);
     scroller = [[MGScrollView alloc] initWithFrame:frame];
     [self.view addSubview:scroller];
     scroller.alwaysBounceVertical = YES;
@@ -87,8 +88,9 @@
     NSString *returnedMyFileContents=[[NSString alloc] initWithData:myFileData encoding:NSASCIIStringEncoding];
     NSString *cleanString = [returnedMyFileContents stringByReplacingOccurrencesOfString:@"\"" withString:@""];
     NSArray *returnedList = [cleanString componentsSeparatedByString:@"\n"];
-    
+    /*
     NSMutableDictionary *distanceAndDisaster = [[NSMutableDictionary alloc] init];
+    
     
     for (NSString *line in returnedList) {
         
@@ -107,14 +109,15 @@
     NSMutableArray *sortedValues = [NSMutableArray array];
     for (NSString *key in sortedKeys)
         [sortedValues addObject: [distanceAndDisaster objectForKey: key]];;
-    
+    */
     //Parsing Complete into array with each line
     //Note that the top line is only 10 commas because of the date in others
     
-    NSEnumerator *e = [sortedValues objectEnumerator];//Change this to returnedList if want the latest results by Date
-    id listItems;
-    while (listItems = [e nextObject]) {
-        //NSArray *listItems = [object componentsSeparatedByString:@","];
+    //NSEnumerator *e = [sortedValues objectEnumerator];//Change this to returnedList if want the latest results by Date and uncomment the listItems
+    NSEnumerator *e = [returnedList objectEnumerator];
+    id object;
+    while (object = [e nextObject]) {
+        NSArray *listItems = [object componentsSeparatedByString:@","];
         if ([listItems count] > 10 ) {
             MGStyledBox *boxI = [MGStyledBox box];
             [scroller.boxes addObject:boxI];
@@ -161,5 +164,15 @@
         view = view.superview;
     }
     return (MGBox *)view.superview;
+}
+
+- (IBAction)buttonDonePressed:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
+- (void)viewDidUnload {
+    [self setNavBar:nil];
+    [super viewDidUnload];
 }
 @end

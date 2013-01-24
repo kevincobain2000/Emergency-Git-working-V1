@@ -19,4 +19,8 @@
 }
 
 - (MGBox *)parentBoxOf:(UIView *)view;
+- (IBAction)buttonDonePressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
+
+
 @end
