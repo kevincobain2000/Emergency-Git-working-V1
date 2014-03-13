@@ -1,116 +1,112 @@
-Keywords
---------------
-English
+### Keywords
+
+##### English
 
 emergency, police, hospital, fire, siren, shout out, countries, help contact numbers
 
-Chinese
+##### Chinese
 
 紧急情况, 呼叫, 警方, 消防, 医院, 国家, 根据位置
 
-Indonesian
+##### Indonesian
 
 darurat, suara, memanggil, polisi, pemadam kebakaran, rumah sakit, kontak, negara
 
-Malay
+##### Malay
 
 Kecemasan, Lampu Suluh, Bunyi, Pilih Hubungi, Panggil, Polis, Pemadam Kebakaran, Negara 
 
-French
+##### French
 
 urgences, Son, contact, Appel, Police, Feu, Hôpital, Pays
 
-Japanese
+##### Japanese
 
 緊急, サウンド, 電話 , コンタクト, 国, 警察, 消防, 病院
 
-korean
+##### korean
 
 경고, 소리, 전화걸다, 경찰, 불, 병원, 국가
 
-Vietnamese
+##### Vietnamese
 Khẩn Cấp , Báo Động, Cảnh Sát, Cứu Hỏa, Bệnh Viện, Đất Nước
 
-Spanish
+##### Spanish
 
 Emergencia, Sonido, contacto, Llamar, Policía, Fuego, Hospital, País 
 
-arabic
+##### arabic
 حالة طوارئ, صوت, إجراء اتصال, شرطة, إطفاء, مستشفى, البلد
 
-german
+##### german
 Notfall, Taschenlampe, Klang, Polizei, Feuerwehr, Krankenhaus
 
-NEXT TO DO
-==========
+#### NEXT TO DO
 
 1. Make Flashlight button to SOS 
 2. While submitting update CHANGE THE KEYWORDS TO RESPECTIVE LANGUAGES
 3. Add info button for latest updates on the earthquake api (http://earthquake.usgs.gov/earthquakes/catalogs/eqs1day-M2.5.txt)
 
 
-★ iPhone 5 iOS 6 Ready ★
+#### ★ iPhone 5 iOS 6 Ready ★
 
 help.ME in any Emergency, Blackout, Molesters, Threat, Natural disasters ...
 
-★ Flashlight
-★ Sound Attention - Louder than voice !
-★ My Emergency Contact - Call, SMS, Email - Quicker than finding one in Panic !
-★ Whole World's Police, Fire & Hospital Phone Numbers
-★ Shout out help.ME on Facebook, Twitter - Someone will get help ASAP !
-★ Auto Append Geo Location - To precise Street Name
+- ★ Flashlight
+- ★ Sound Attention - Louder than voice !
+- ★ My Emergency Contact - Call, SMS, Email - Quicker than finding one in Panic !
+- ★ Whole World's Police, Fire & Hospital Phone Numbers
+- ★ Shout out help.ME on Facebook, Twitter - Someone will get help ASAP !
+- ★ Auto Append Geo Location - To precise Street Name
 
 
-Features
---------
+#### Features
 
-▪ Beautiful on Retina Display.
-▪ Equips you with emergency gadgets and contacts.
-▪ Customizable message for any emergency, with option to appending location.
-▪ Choose one contact's Phone Number from your Address Book as Emergency Contact.
-▪ Feel free to customize default Police, Fire & Hospital Numbers to your local numbers.
-▪ Flying to a different country, just pick a new country from settings and numbers are set !
+- ▪ Beautiful on Retina Display.
+- ▪ Equips you with emergency gadgets and contacts.
+- ▪ Customizable message for any emergency, with option to appending location.
+- ▪ Choose one contact's Phone Number from your Address Book as Emergency Contact.
+- ▪ Feel free to customize default Police, Fire & Hospital Numbers to your local numbers.
+- ▪ Flying to a different country, just pick a new country from settings and numbers are set !
 
 
-11 Languages Supported
-----------------------
+#### 11 Languages Supported
 
 Arabic, Chinese - Simplified, Dutch, English, French, Indonesian, Japanese, Korean, Malay, Spanish and Vietnamese.
 
-Notes
------
+#### Notes
 
-‣ Posting on Facebook requires iOS 6.0 or above
 
-Requires
---------
+- ‣ Posting on Facebook requires iOS 6.0 or above
 
-✔ iOS 5 or above
-✔ iPhone 3GS, iPhone 4, 4s
-✔ Optimized for iPhone 5
+#### Requires
+
+
+- ✔ iOS 5 or above
+- ✔ iPhone 3GS, iPhone 4, 4s
+- ✔ Optimized for iPhone 5
 
 
 help.me, torch, flashlight, emergency, police, hospital, fire, torch, siren
 
-UPDATES
-=======
+### UPDATES
 
-SCRIPT REMOVED
---------------
+#### SCRIPT REMOVED
 
-::
 
+```
   python /Users/kevincobain2000/Documents/iPhoneApps/Emergency-V/localize.py --mainIdiom=en --mainStoryboard=temp/en.lproj/MainStoryboard.storyboard fr ko vi id ms ja zh-Hans de es ar
+```
 
-DONOT USE THE FOLLOWING
-------------------------
+#### DONOT USE THE FOLLOWING
 
 The file localize.py must be in this directory
-::
 
+```
   $HOME/Dropbox/iPhoneApps/Emergency-V/Emergency-Git/localize.py
+```
 
-or change the path by 
+or change the path by
 
 1. click the project at the top ``temp 1 target, iOS SDK 6.0``
 2. Go to ``Build Phases``
@@ -118,11 +114,10 @@ or change the path by
 4. Change the path to ``localize.py``
 
 
-Notes
------
+#### Notes
 
-::
 
+```
     //HERE it is Anything that you need to access for user
     NSLog(@"Country Name: %@", [userData objectForKey:@"CountryName"]);
     NSLog(@"Chosen Country Name: %@", [userData objectForKey:@"ChosenCountryName"]);
@@ -137,7 +132,4 @@ Notes
     //NSLog(@"Contact Person UIImage: %@", [userData objectForKey:@"EmergencyContactPersonImageData"]);
     NSLog(@"Emergency Message: %@", [userData objectForKey:@"EmergencyMessage"]);
     NSLog(@"Current Location: %@", [userData objectForKey:@"CurrentLocation"]);
-
-
-
-
+```
